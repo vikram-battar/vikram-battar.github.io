@@ -47,7 +47,104 @@
         </div>
     </section>
 
-    
+    <!-- flagship -->
+    <section class="flagship reveal" id="work">
+        <div class="flagship-inner">
+            <div class="feature-eyebrow">Flagship project</div>
+            <h2>agentic-incident-responder</h2>
+            <p>Multi-agent incident triage, diagnosis, and remediation — with tool use, working memory, durable orchestration, and a human-in-the-loop approval gate. The eval harness scores a perfect 1.0 across 12 labeled incidents, and the reasoning layer swaps in any OpenAI-compatible model.</p>
+            <div class="terminal">
+                <div class="term-bar"><span></span><span></span><span></span></div>
+                <div class="term-body">
+                    <div><span class="p">$</span> responder triage --incident INC-2041</div>
+                    <div><span class="g">✓</span> severity: <span class="y">SEV-2</span> · service: payments-api</div>
+                    <div><span class="g">✓</span> root cause: OOMKilled · memory limit 512Mi</div>
+                    <div><span class="g">✓</span> remediation proposed — awaiting approval</div>
+                    <div><span class="p">$</span> eval --suite incidents-12 <span class="term-caret"></span></div>
+                    <div><span class="g">✓</span> 12/12 passed · overall 1.0</div>
+                </div>
+            </div>
+            <div class="tagrow"><span class="tag">Python</span><span class="tag">Multi-agent</span><span class="tag">LLM</span><span class="tag">Evals</span></div>
+            <a class="btn btn-primary" href="https://github.com/vikram-battar/agentic-incident-responder" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <div class="section" style="padding-bottom:40px;">
+        <div class="section-head reveal">
+            <h2>Built from scratch.<br />Tested. Documented. In CI.</h2>
+            <p>Ten open-source DevOps and AI/ML tools — every one a real repo you can clone and run.</p>
+        </div>
+    </div>
+
+    <div class="feature reveal">
+        <div class="feature-text">
+            <div class="feature-eyebrow">RAG · Evals</div>
+            <h3>rag-runbook-retriever</h3>
+            <p>Retrieval over operational runbooks: pluggable embeddings with an offline hashed baseline plus optional dense models, top-k ranking with a confidence cutoff, and an eval harness — recall@3 of 1.0 with a faithfulness proxy.</p>
+            <div class="tagrow"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Evals</span></div>
+            <a class="feature-link" href="https://github.com/vikram-battar/rag-runbook-retriever" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2L12 7l-5 5M12 7H2"/></svg></a>
+        </div>
+        <div class="visual v-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0071e3" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg>
+        </div>
+    </div>
+
+    <div class="feature flip reveal">
+        <div class="feature-text">
+            <div class="feature-eyebrow">Kubernetes · Automation</div>
+            <h3>k8s-self-healer</h3>
+            <p>Policy-driven autonomous remediation for Kubernetes: crashloop restarts, failed-deploy rollbacks, dry-run-first execution, a full audit log, and circuit breakers — plus an LLM-ready incident diagnosis bundler.</p>
+            <div class="tagrow"><span class="tag">Python</span><span class="tag">Kubernetes</span><span class="tag">Controllers</span></div>
+            <a class="feature-link" href="https://github.com/vikram-battar/k8s-self-healer" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2L12 7l-5 5M12 7H2"/></svg></a>
+        </div>
+        <div class="visual v-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a9e54" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+    </div>
+
+    <div class="feature reveal">
+        <div class="feature-text">
+            <div class="feature-eyebrow">CLI · CI</div>
+            <h3>k8s-manifest-guard</h3>
+            <p>A CLI that lints Kubernetes YAML and fails CI on misconfigurations — <code>:latest</code> images, root containers, privileged pods, host namespaces, missing probes and resource limits. Boring manifests, reliable clusters.</p>
+            <div class="tagrow"><span class="tag">Python</span><span class="tag">CLI</span><span class="tag">CI gates</span></div>
+            <a class="feature-link" href="https://github.com/vikram-battar/k8s-manifest-guard" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2L12 7l-5 5M12 7H2"/></svg></a>
+        </div>
+        <div class="visual v-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg>
+        </div>
+    </div>
+
+    <div class="feature flip reveal">
+        <div class="feature-text">
+            <div class="feature-eyebrow">Terraform · EKS · ArgoCD</div>
+            <h3>eks-gitops-platform</h3>
+            <p>The reference architecture everything else builds on: a production-style Terraform EKS platform with ArgoCD GitOps — the paved road for shipping to Kubernetes.</p>
+            <div class="tagrow"><span class="tag">Terraform</span><span class="tag">EKS</span><span class="tag">ArgoCD</span></div>
+            <a class="feature-link" href="https://github.com/vikram-battar/eks-gitops-platform" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2L12 7l-5 5M12 7H2"/></svg></a>
+        </div>
+        <div class="visual v-slate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="19" r="2.4"/><circle cx="19" cy="19" r="2.4"/><path d="M12 7.5v4m0 0l-5.5 5m5.5-5l5.5 5"/></svg>
+        </div>
+    </div>
+
+    <div class="feature reveal">
+        <div class="feature-text">
+            <div class="feature-eyebrow">Python · Ansible · CI</div>
+            <h3>cloud-ops-cicd-framework</h3>
+            <p>A Python/Ansible framework for cloud operations and CI automation — with a full passing test suite. The unglamorous glue that keeps fleets healthy.</p>
+            <div class="tagrow"><span class="tag">Python</span><span class="tag">Ansible</span><span class="tag">Pytest</span></div>
+            <a class="feature-link" href="https://github.com/vikram-battar/cloud-ops-cicd-framework" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2L12 7l-5 5M12 7H2"/></svg></a>
+        </div>
+        <div class="visual v-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l-5 5 5 5"/><path d="M20 4L10 20"/></svg>
+        </div>
+    </div>
+
+    <div class="feature flip reveal">
+        <div class="feature-text">
+            
     <script src="js/main.js"></script>
 </body>
 </html>
