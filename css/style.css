@@ -261,3 +261,17 @@ body {
 /* ---------- footer ---------- */
 footer { border-top: 1px solid rgba(0,0,0,.08); padding: 34px 22px; text-align: center; color: var(--text-2); font-size: 13px; }
 footer a { color: var(--text-2); }
+
+/* ---------- reduced motion + small screens ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .blob, .visual svg, .terminal, .dash, .pipe, .bars i, .scroll-hint .chev, .term-caret { animation: none !important; }
+    .reveal { transition: none; opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+}
+@media (max-width: 640px) {
+    .section { padding: 80px 20px; }
+    .feature { padding: 40px 20px; }
+    .flagship { margin: 24px 12px; border-radius: 20px; }
+    .flagship-inner { padding: 70px 20px; }
+    .cta-row .btn { width: 100%; justify-content: center; }
+}
